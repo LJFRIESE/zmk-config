@@ -37,8 +37,8 @@
             tapping-term-ms = <150>;
             bindings = <&kp ESC>, <&kp CAPS>;
         };
-    };
-       magic: magic_hold_tap {
+
+        magic: magic_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "MAGIC_HOLD_TAP";
             #binding-cells = <2>;
