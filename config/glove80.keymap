@@ -31,6 +31,13 @@
             bindings = <&mo LOWER>, <&to LOWER>;
         };
 
+        td_esc: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <150>;
+            bindings = <&kp ESC>, <&kp CAPS>;
+        };
+
         magic: magic_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "MAGIC_HOLD_TAP";
