@@ -20,6 +20,10 @@
 #define MAGIC 2
 #define FACTORY_TEST 3
 
+    &caps_word {
+        continue-list = <UNDERSCORE MINUS SPACE TAB RETURN COMMA APOS DQT GT LT EQUAL PERIOD RPAR LPAR PIPE AMPS SEMICOLON>;
+    };
+
 / {
     behaviors {
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
@@ -103,9 +107,6 @@
         };
     };
 
-    &caps_word {
-        continue-list = <UNDERSCORE MINUS SPACE TAB RETURN COMMA APOS DQT GT LT EQUAL PERIOD RPAR LPAR PIPE AMPS SEMICOLON>;
-    };
 
     keymap {
         compatible = "zmk,keymap";
