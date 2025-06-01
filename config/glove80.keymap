@@ -36,7 +36,7 @@
             bindings = <&mo LOWER>, <&to LOWER>;
         };
 
-    lt: layer_tap {
+        lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
@@ -52,7 +52,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        td_fast: tap_dance_2 {
+        td_fast: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <150>;
