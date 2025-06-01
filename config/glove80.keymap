@@ -45,11 +45,11 @@
             display-name = "Layer-Tap";
         };
 
-        td_slow: tap_dance_1 {
+        td_esc: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp ESC>, <&kp CAPS>;
         };
 
         td_fast: tap_dance_1 {
@@ -132,7 +132,7 @@
             &kp F1         &kp F2   &kp F3      &kp F4      &kp F5                                                                                        &kp F6    &kp F7      &kp F8      &kp F9      &kp F10
             &kp EQUAL      &kp N1   &kp N2      &kp N3      &kp N4      &kp N5                                                                     &kp N6 &kp N7    &kp N8      &kp N9      &kp N0      &kp MINUS
             &kp TAB        &kp Q    &kp W       &kp F       &kp P       &kp B                                                                      &kp J  &kp L     &kp U       &kp Y       &kp SEMI    &kp BSLH
-            &td_slow ESC CAPS   &kp A    &kp R       &kp S       &kp T       &kp G                                                                      &kp M  &kp N     &kp E       &kp I       &kp O       &kp SQT
+            &td_esc        &kp A    &kp R       &kp S       &kp T       &kp G                                                                      &kp M  &kp N     &kp E       &kp I       &kp O       &kp SQT
             &kp LSHFT      &kp Z    &kp X       &kp C       &kp D       &kp V  &kp LCTRL   &kp LALT      &kp LGUI     &magic MAGIC 0 &kp RALT &kp RCTRL     &kp K  &kp H     &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT
             &kp LSHFT      &kp HOME &kp PGDN    &kp PGUP    &kp END            &kp BSPC    &lt 1 DEL     &kp MEH      &kp MEH  &lt 1 RET      &kp SPACE           &kp LEFT  &kp DOWN    &kp UP      &kp RIGHT   &kp RSHFT
             >;
