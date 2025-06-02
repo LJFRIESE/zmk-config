@@ -36,15 +36,6 @@
             bindings = <&mo LOWER>, <&to LOWER>;
         };
 
-        lt: layer_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <150>;
-            bindings = <&mo>, <&kp>;
-            display-name = "Layer-Tap";
-        };
-
         td_esc: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "ESC_CAPS";
@@ -61,13 +52,21 @@
             bindings = <&kp>, <&kp>;
         };
 
-        magic: magic_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MAGIC_HOLD_TAP";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
+        magic: magic_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MAGIC_TAP";
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo>, <&rgb_ug_status_macro>;
+        };
+
+        lt: layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&mo>, <&kp>;
+            display-name = "Layer-Tap";
         };
     };
 
