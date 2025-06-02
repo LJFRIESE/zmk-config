@@ -47,9 +47,18 @@
 
         td_esc: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
+            label = "ESC_CAPS";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp ESC>, <&kp CAPS>;
+        };
+
+        td_fast: tap_dance_fast {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_FAST";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
         };
 
         magic: magic_hold_tap {
