@@ -57,7 +57,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_FAST";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp>, <&kp>;
         };
 
