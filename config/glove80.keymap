@@ -57,7 +57,7 @@
             label = "MAGIC_TAP";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo>, <&rgb_ug_status_macro>;
+            bindings = <&mo MAGIC>, <&rgb_ug_status_macro>;
         };
 
         lt: layer_tap {
