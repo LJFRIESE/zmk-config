@@ -69,7 +69,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&mo>, <&rgb_ug_status_macro>;
+            bindings = <&mo>, <&magic_macro>;
         };
     };
 
@@ -92,7 +92,7 @@
     };
 
     macros {
-        rgb_ug_status_macro: rgb_ug_status_macro_0 {
+        magic_macro: magic_macro_0 {
             label = "RGB_UG_STATUS";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
