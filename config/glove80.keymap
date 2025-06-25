@@ -160,14 +160,14 @@
         combo_esc {
             timeout-ms = <100>;
             layers = <0>;
-            key-positions = <&POS_LH_R5C6 &POS_RH_R5C6>;
+            key-positions = <&POS_LH_C6R5 &POS_RH_C6R5>;
             bindings = <&caps_word>;
         };
 
         nav_left {
             timeout-ms = <100>;
             layers = <0>;
-            key-positions = <&POS_LH_R5C6 &POS_LH_T5>;
+            key-positions = <&POS_LH_C6R5 &POS_LH_T5>;
             bindings = <&mo NAV>;
         };
 
