@@ -158,11 +158,26 @@
     combos {
         compatible = "zmk,combos";
         combo_esc {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             layers = <0>;
             key-positions = <&POS_LH_R5C6 &POS_RH_R5C6>;
             bindings = <&caps_word>;
         };
+
+        nav_left {
+            timeout-ms = <100>;
+            layers = <0>;
+            key-positions = <&POS_LH_R5C6 &POS_LH_T5>;
+            bindings = <&mo NAV>;
+        };
+
+        nav_right {
+            timeout-ms = <100>;
+            layers = <0>;
+            key-positions = <&POS_RH_C6R5 &POS_RH_T5>;
+            bindings = <&mo NAV>;
+        };
+
     };
 
     conditional_layers {
