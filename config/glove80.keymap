@@ -163,21 +163,6 @@
             key-positions = <POS_LH_C6R5 POS_RH_C6R5>;
             bindings = <&caps_word>;
         };
-
-        nav_left {
-            timeout-ms = <100>;
-            layers = <0>;
-            key-positions = <POS_LH_C6R5 POS_LH_T5>;
-            bindings = <&mo NAV>;
-        };
-
-        nav_right {
-            timeout-ms = <100>;
-            layers = <0>;
-            key-positions = <POS_RH_C6R5 POS_RH_T5>;
-            bindings = <&mo NAV>;
-        };
-
     };
 
     conditional_layers {
