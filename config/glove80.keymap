@@ -158,6 +158,11 @@
             if-layers = <1 2>;
             then-layer = <3>;
         };
+
+        tsft {
+            if-layers = <0 3>;
+            then-layer = <3>;
+        };
     };
 
     macros {
@@ -217,6 +222,7 @@
 &kp LSHFT       &kp Z     &kp X        &kp C          &kp D    &kp V   &kp LCTRL  &mo 3       &kp LGUI            &kp RGUI              &mo 2           &kp RCTRL  &kp K   &kp H     &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
 &magic MAGIC 0  &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END          &kp BSPC   &kp DELETE  &kp LS(LC(LALT))    &kp LS(LC(LEFT_ALT))  &lt SYMBOL RET  &kp SPACE          &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT  &kp RSHFT
             >;
+
             label = "BASE";
         };
 
@@ -255,7 +261,8 @@
 &none  &kp LC(F13)  &kp LC(F14)  &kp LC(F15)  &kp LC(F16)  &kp LC(F17)  &trans  &trans  &trans    &trans  &trans  &trans  &kp LC(F18)  &kp LC(F19)  &kp LC(F20)  &kp LC(F21)  &kp LC(F22)  &none
 &none  &none        &none        &none        &none                     &trans  &trans  &trans    &trans  &trans  &trans               &none        &none        &none        &none        &none
             >;
-            label = "QWERTY";
+
+            label = "NAV";
         };
 
         QWERTY {
@@ -278,6 +285,7 @@
 &sys_reset   &studio_unlock   &none            &none            &none            &none            &bt_2  &bt_3  &none           &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
 &none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB    &none  &none  &none         &none  &none  &none  &none  &none
             >;
+
             label = "MAGIC";
         };
     };
