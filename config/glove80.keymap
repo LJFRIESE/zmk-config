@@ -100,7 +100,7 @@
 
 #define DEFAULT  0
 #define SYMBOL   1
-#define SYMBOL_2 2
+#define NUMBER   2
 #define NAV      3
 #define QWERTY   4
 #define MAGIC    5
