@@ -165,6 +165,11 @@
             key-positions = <POS_LH_C6R5 POS_RH_C6R5>;
             bindings = <&caps_word>;
         };
+
+        c_symbols {
+            bindings = <&mo 1>;
+            key-positions = <53 46>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -262,7 +267,7 @@
 &none  &none        &none        &none        &none        &none                                                          &none        &none        &none        &none        &none        &none
 &none  &kp F18      &kp F19      &kp F20      &kp F21      &kp F22                                                        &kp F18      &kp F19      &kp F20      &kp F21      &kp F22      &none
 &to 0  &kp F13      &kp F14      &kp F15      &kp F16      &kp F17                                                        &kp LS(F13)  &kp LS(F14)  &kp LS(F15)  &kp LS(F16)  &kp LS(F17)  &none
-&mo 2  &kp LC(F13)  &kp LC(F14)  &kp LC(F15)  &kp LC(F16)  &kp LC(F17)  &trans  &trans  &trans    &trans  &trans  &trans  &kp LC(F18)  &kp LC(F19)  &kp LC(F20)  &kp LC(F21)  &kp LC(F22)  &none
+&none  &kp LC(F13)  &kp LC(F14)  &kp LC(F15)  &kp LC(F16)  &kp LC(F17)  &trans  &trans  &trans    &trans  &trans  &trans  &kp LC(F18)  &kp LC(F19)  &kp LC(F20)  &kp LC(F21)  &kp LC(F22)  &none
 &none  &none        &none        &none        &none                     &trans  &trans  &trans    &trans  &trans  &trans               &none        &none        &none        &none        &none
             >;
 
